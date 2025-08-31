@@ -1,1 +1,2 @@
-eval(req.query.code); // ❌ Dangerous
+const userCode = JSON.parse(req.query.code);
+console.log(userCode);
